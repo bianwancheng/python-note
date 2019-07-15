@@ -38,7 +38,7 @@ WebDriverWait(driver,timeout,poll_frequency)在单位时间内，检测元素是
 :parameter
 driver 驱动
 timeout等待时间
-poll_frequency检测时间间隔
+poll_frequency检测时间间隔(每0.5s检测一次)
 -------------------------------------------------------------------
 WebDriverWait()一般由until()或 until_not()方法配合使用
 until(method, message=' ')：调用该方法提供的驱动程序作为一个参数，直到返回值为True
