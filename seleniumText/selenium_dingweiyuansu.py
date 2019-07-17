@@ -89,10 +89,9 @@ until_not(method, message=' ')：一直调用回调函数method，直到返回�
 def find_element(driver, locator):  # locator参数是定位方式，如("id", "kw"),传入元组但是*号是把两个参数分开传值
     print(*locator)
     element = WebDriverWait(driver, 20, 0.5).until(lambda x: x.find_element(*locator)) #find_element()里面的参数是分开
-    # find_element()里面的参数是分开传的并不是一个元组  def find_element(self, by=By.ID, value=None):
+    # find_element() 里面的参数是分开传的并不是一个元组  def find_element(self, by=By.ID, value=None):
     print(element)
     return element
-
 
 wait = WebDriverWait(driver, 5, 0.5)
 try:
